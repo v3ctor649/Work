@@ -32,10 +32,6 @@ def add_quiz(request):
                 return JsonResponse({"status": 'Добавил'}, status=200)
             else:
                 return JsonResponse({"status": 'Некорректный ввод.Число должно быть больше 0!'}, status=200)
-            #return JsonResponse(
-            #    {'id':new_delo.id,
-            #     'delo':new_delo.delo},
-            #     safe=False)
     elif request.method=='GET':
         return redirect('main_page')
 
